@@ -23,7 +23,7 @@ header{
 /* MAIN */
 #gallery{
     margin: 0 auto;
-    padding-bottom: 3.125rem;
+    padding-bottom: 6.25rem;
     width: 31.25rem;
     display: flex;
     justify-content: center;
@@ -33,7 +33,7 @@ header{
 
 .card{
     background-color: white;
-    width: 17.5rem;
+    width: 18.125rem;
     height: 21.875rem;
     padding: .9375rem;
     position: relative;
@@ -44,7 +44,7 @@ header{
     transform: scale(1.2) rotate(10deg);
     transition: 0.3s;
     z-index: 1;
-    box-shadow: rgb( 0, 0, 0) 5px 30px 40px -5px;
+    box-shadow: rgb( 0, 0, 0) 10px 30px 40px 0px;
     cursor: pointer;
 }
 
@@ -54,13 +54,13 @@ header{
 
 .card > img{
     position: absolute;
-    left: 7.8125rem;
+    left: 45%;
     top: -0.625rem;
 }
 
 .img > img{
-    width: 15.625rem;
-    height: 17.5rem;
+    width: 16.25rem;
+    height: 16.25rem;
 }
 
 /* OVERLAY */
@@ -75,6 +75,9 @@ header{
     justify-content: center;
     align-items: flex-start;
     z-index: 10;
+}
+
+#overlay.hidden{
     display: none;
 }
 
@@ -82,13 +85,13 @@ header{
     text-align: center;
 }
 
-#overlay button{
+#btn-close{
     font-size: .9375rem;
     padding: .3125rem .75rem;
     margin: 1.25rem 0;
 }
 
-#overlay img{
+#overlay-img{
     width: 28.125rem;
     display: block;
 }
