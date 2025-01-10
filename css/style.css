@@ -37,7 +37,19 @@ header{
     height: 21.875rem;
     padding: .9375rem;
     position: relative;
-    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    box-shadow: rgb( 0, 0, 0) 0px 20px 30px -10px;
+}
+
+.card:hover{
+    transform: scale(1.2) rotate(10deg);
+    transition: 0.3s;
+    z-index: 1;
+    box-shadow: rgb( 0, 0, 0) 5px 30px 40px -5px;
+    cursor: pointer;
+}
+
+.card:hover > img{
+    display: none;
 }
 
 .card > img{
@@ -49,6 +61,36 @@ header{
 .img > img{
     width: 15.625rem;
     height: 17.5rem;
+}
+
+/* OVERLAY */
+#overlay{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba( 0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    z-index: 10;
+    display: none;
+}
+
+#container{
+    text-align: center;
+}
+
+#overlay button{
+    font-size: .9375rem;
+    padding: .3125rem .75rem;
+    margin: 1.25rem 0;
+}
+
+#overlay img{
+    width: 28.125rem;
+    display: block;
 }
 
 /* RESPONSIVE */
